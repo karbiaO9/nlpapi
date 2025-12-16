@@ -27,9 +27,9 @@ print("✓ Ressources NLTK téléchargées")
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
+DATA_PATH = "data/articles.json"
 
-DATA_PATH = Path("/content/articles.json")
-OUT_PATH = Path("/content/articles_clean.csv")
+OUT_PATH = Path("/data/articles_clean.csv")
 
 def preprocess_text(text):
     """
