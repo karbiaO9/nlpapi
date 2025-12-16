@@ -107,7 +107,7 @@ def preprocess_main():
 
     return df
 
-# Exécuter
+# Exécuter le prétraitement
 df = preprocess_main()
 
 # ========================================
@@ -217,6 +217,8 @@ def train_w2v_main():
     print(f"✓ Forme des embeddings: {embeddings_normalized.shape}")
     print(f"✓ Modèle Word2Vec sauvegardé → data/word2vec_model.bin")
 
+# Exécuter Word2Vec
+train_w2v_main()
 
 # ========================================
 # FastAPI REST API
@@ -265,5 +267,4 @@ def recommend(article_id: int, n: int = 5):
     }
 
 if __name__ == "__main__":
-    preprocess_main()
     train_w2v_main()
