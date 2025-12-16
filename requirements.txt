@@ -1,5 +1,7 @@
 fastapi
 uvicorn
 pandas
-scikit-learn
 numpy
+scikit-learn
+gensim
+nltk
