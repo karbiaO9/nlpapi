@@ -8,6 +8,7 @@ from pathlib import Path
 from fastapi import FastAPI, HTTPException
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
+from gensim.models import Word2Vec
 
 # ========================================
 # Data Preparation with Preprocessing
