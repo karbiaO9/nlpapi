@@ -113,7 +113,6 @@ def main():
 # Exécuter
 df = main()
 
-!pip install gensim
 
 # ========================================
 # Word2Vec Embeddings
