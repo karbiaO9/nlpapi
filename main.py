@@ -13,6 +13,9 @@ Original file is located at
 import json
 import pandas as pd
 import re
+import os
+
+
 import nltk
 from pathlib import Path
 
@@ -28,8 +31,9 @@ from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 DATA_PATH = "data/articles.json"
-
-OUT_PATH = Path("/data/articles_clean.csv")
+os.makedirs("data", exist_ok=True)
+OUT_PATH = "data/articles_clean.csv"
+df_save.to_csv(OUT_PATH, index=False)
 
 def preprocess_text(text):
     """
